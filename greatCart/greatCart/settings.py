@@ -70,6 +70,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'greatCart.wsgi.application'
 
+AUTH_USER_MODEL='accounts.Account'
+
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
@@ -127,3 +129,8 @@ STATIC_ROOT=BASE_DIR / 'static'
 STATICFILES_DIRS=[
     'greatCart/static',
 ]
+
+
+# media files configuration 
+MEDIA_URL = '/media/'
+MEDIA_ROOT=BASE_DIR / 'media'
